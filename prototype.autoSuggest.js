@@ -2,12 +2,13 @@
  * Prototype AutoSuggest
  * Copyright 2012 Alice Murphy
  * alice.rose.murphy@gmail.com
+ * http://github.com/alicemurphy/prototype.autoSuggest
  * 
  * Version 1.0  -  2012-06-22
  *
  * Port of the jQuery AutoSuggest plugin by Drew Wilson,
  * licensed under the MIT license:
- *   code.drewwilson.com/entry/autosuggest-jquery-plugin
+ *   http://code.drewwilson.com/entry/autosuggest-jquery-plugin
  *
  * This plugin is licensed under the MIT License:
  *   http://www.opensource.org/licenses/mit-license.php
