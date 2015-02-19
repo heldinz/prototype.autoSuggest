@@ -181,6 +181,10 @@
                     comma_press = true;
                     // If it was a comma, remove it from our entered text
                     var i_input = $F(input).replace(/(,)/g, "");
+                    // Strip HTML tags
+                    i_input = i_input.replace(/(<([^>]+)>)/ig,"");
+                    // Strip any double-quotes
+                    i_input = i_input.replace(/(")/g, "");
                     // If the entered value is not already in our list of selected items and meets our minChars restriction
                     // (Check for leading as well as trailing delimiter, to ensure we don't match just the end of the first element)
                     if(i_input != "" && $F(values_input).search(","+i_input+",") < 0 && i_input.length >= opts.minChars){
