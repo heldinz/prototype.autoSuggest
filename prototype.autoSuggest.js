@@ -1,14 +1,15 @@
  /*
  * Prototype AutoSuggest
- * Copyright 2012 Alice Murphy
- * alice.rose.murphy@gmail.com
- * http://github.com/alicemurphy/prototype.autoSuggest
- * 
+ * Copyright 2009-2010, 2012, 2015 Drew Wilson, Alice Rose
+ * heldinz@posteo.de
+ * https://github.com/heldinz/prototype.autoSuggest
+ *
  * Version 1.0  -  2012-06-22
+ * Version 1.1  -  2015-02-19
  *
  * Port of the jQuery AutoSuggest plugin by Drew Wilson,
  * licensed under the MIT license:
- *   http://code.drewwilson.com/entry/autosuggest-jquery-plugin
+ *   https://github.com/drewwilson/AutoSuggest
  *
  * This plugin is licensed under the MIT License:
  *   http://www.opensource.org/licenses/mit-license.php
@@ -16,7 +17,7 @@
 
 (function(){
 	autoSuggest = function(element, data, options) {
-		var defaults = { 
+		var defaults = {
 			startText: "Enter Name Here",
 			emptyText: "No Results Found",
 			preFill: {},
@@ -43,9 +44,9 @@
 		  	retrieveComplete: function(data){ return data; },
 		  	resultClick: function(data){},
 		  	resultsComplete: function(){}
-	  	};  
+	  	};
 	 	var opts = Object.extend(defaults, options);
-		
+
 		var d_type = "object";
 		var d_count = 0;
 		if(typeof data == "string") {
@@ -194,7 +195,7 @@
                         results_holder.hide();
                     }
             	}
-            
+
                 // track last key pressed
                 lastKeyPressCode = e.keyCode;
                 switch(e.keyCode) {
